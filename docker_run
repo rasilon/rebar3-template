@@ -1,0 +1,8 @@
+#!/bin/bash
+docker run \
+    --rm\
+    --name erest\
+    -p 8080:8080\
+    derryh-test:latest
+
+

@@ -1,0 +1,24 @@
+{application, erest,
+ [{description, "An OTP application"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {mod, {erest_app, []}},
+  {applications,
+   [kernel,
+    stdlib,
+	xmerl,
+	jiffy,
+	cowlib,
+	ranch,
+	cowboy,
+	leptus
+   ]},
+  {env,[]},
+  {modules, [hello,
+	erest_app
+	]},
+
+  {maintainers, []},
+  {licenses, ["Apache 2.0"]},
+  {links, []}
+ ]}.

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+rebar3 as prod tar
+./docker_build
+./docker_run
