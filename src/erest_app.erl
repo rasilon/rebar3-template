@@ -16,8 +16,10 @@
 
 start(_StartType, _StartArgs) ->
     %erest_sup:start_link().
-    leptus:start_listener(http, [{'_', [{hello, undefined_state}]}],[{ip,{0,0,0,0}}]).
-
+    leptus:start_listener(http, [{'_', [
+                                        {hello, undefined_state},
+                                        {example_binding, undefined_state}
+                                       ]}],[{ip,{0,0,0,0}}]).
 
 %%--------------------------------------------------------------------
 stop(_State) ->
